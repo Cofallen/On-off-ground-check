@@ -10,7 +10,7 @@ from sklearn.metrics import log_loss
 input_csv = 'new.csv'         # 数据文件
 output_c_file = 'rf_ground_check.c'  # 输出 C 文件
 n_trees = 100                 # 随机森林树数量
-max_depth = 8                 # 树最大深度（越大生成代码越长）
+max_depth = 10                 # 树最大深度（越大生成代码越长）
 # ----------------------------
 
 # 1. 读取数据
