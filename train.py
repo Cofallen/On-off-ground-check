@@ -17,11 +17,11 @@ X_aug = np.c_[np.ones(X_scaled.shape[0]), X_scaled]
 
 # 4. 超参数
 learning_rate = 10
-n_iteration = 10000
-reg_lambda = 80
+n_iteration = 6000
+reg_lambda = 0.1
 
 # 5. 初始化theta
-theta = np.random.randn(13) * 0.01
+theta = np.random.randn(10) * 0.01
 
 # 6. 训练逻辑回归
 for i in range(n_iteration):
