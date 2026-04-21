@@ -35,9 +35,12 @@ print(f"随机森林训练集 Log-Loss: {loss:.6f}")
 print(f"准确率: {rf.score(X_scaled, y):.4f}")
 
 # # 导出为 C 代码
-# c_code = port(rf, classmap={0: "off", 1: "on"})
+c_code = port(rf, classmap={0: "off", 1: "on"})
 # print("\n/* ----- 随机森林 C 代码 ----- */")
 # print(c_code)
+# with open("rf_model_params.c", "w") as f:
+#     f.write("/* ----- 随机森林 C 代码 ----- */\n")
+#     f.write(c_code)
 
 # 同时输出标准化参数（如果你需要在 C 中先标准化输入）
 print("\n/* ----- 标准化参数（用于预处理输入）----- */")
