@@ -12,7 +12,7 @@ X_scaled = (X - mean) / std
 
 X_aug = np.c_[np.ones(X_scaled.shape[0]), X_scaled]
 
-learnig_rate = 100
+learnig_rate = 1
 n_iteration = 50000
 reg_lambda = 0.01
 
