@@ -12,9 +12,9 @@ X_scaled = (X - mean) / std
 
 X_aug = np.c_[np.ones(X_scaled.shape[0]), X_scaled]
 
-learnig_rate = 1
+learnig_rate = 0.1
 n_iteration = 50000
-reg_lambda = 0.01
+reg_lambda = 1
 
 theta = np.random.randn(13) * 0.01
 # theta = np.zeros(13)  # 初始化为0也可以，随机初始化有时会更快收敛
